@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+  
 <body style="background-image:url(https://i.imgur.com/IhUL9pK.jpg)">
 
 <h1> Yanis Caff - Sensor Technology Projects. </h1>
-
+<br>
 <h2> a1. </h2>
 
 <p style="color:white;"> 
@@ -11,10 +32,15 @@
 <img src="https://i.imgur.com/Dq8kBd3.jpg" style="float:left;width="560" height="315" title="source: imgur.com"></p>
                                                                                                                 
 <br>
-                                                                                                                
+                                                                                                               
+<div class="row">
+  <div class="column">                                                                                                                
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8USfA9RjmGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
+  <div class="column">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k59pAKVYpL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
 
 <br>
 
