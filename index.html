@@ -8,6 +8,22 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+  
+  
+/* Create two equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 315px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .column {
   float: left;
@@ -79,9 +95,19 @@
 <div class="firstone common">
 
   <h2 style="color:white;font-size:300%;"> a1. </h2>
-<p style="color:white;"> 
+
+  <div class="row">
+  <div class="column">
 <span2><img src="https://i.imgur.com/Dq8kBd3.jpg" style="float:center;width="560" height="315" title="source: imgur.com"></span2>
-  <span1>A</span1>ssignment one descrption - 300 words max for each project</p>
+  </div>
+  <div class="column">
+  <p style="color:white;">
+  <span1>A</span1>
+  ssignment one descrption - 300 words max for each project
+  </p>
+  </div>
+  </div>
+  </div>
 </div> 
                                                                                                                
 
