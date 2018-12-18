@@ -118,6 +118,15 @@ One issue that I have found with using these cheap sensors is that they do regul
 
   <p style="color:white;">
   <span>A</span>ssignment Two - Arduino and Music (hardware)<br>
+    <br>
+    In this task I used the Arduino to control six servos on a loop. Each servo was effecting a different object as to generate a variation of sounds. <br>
+The first sketch that I designed for this task using the example code in the Arduino software was quite effective, however I quickly noticed that the use of ‘Delay()’ in the language of C can be quite limiting as each time you introduce another Delay to the sketch you are effectively applying the delay over the entire code multiple times and thus slowing everything down.<br>
+<br>
+As a result of this I had to use use ‘millis’ instead, which is effectively a timer that counts the number of milliseconds since the code is started.<br>
+As this is a very complicated area I resorted to requesting help on the Arduino <a href="https://forum.arduino.cc/index.php?topic=582044.0" target="_blank">Forum</a>. and also received assistance from Krisztian Hofstadter.<br>
+The second version of this code was much more versatile and allowed me to change the timing of each servo without affecting the timing of everything else in the sketch. I did however feel that I would have liked to have gained more versatility in regards to modulating the speed of which each servo is going in real time. This seemed to be much to big of a task so unfortunately I was unable to achieve this.
+
+    
                           <br>
                           The Arduino Sketch for this project can be downloaded <a href="https://www.dropbox.com/sh/y5j7b3oovyuizrb/AACMJq8kA9eYB7g3GC6iQTQXa?dl=0" target="_blank">Here</a>.
                             </p>
